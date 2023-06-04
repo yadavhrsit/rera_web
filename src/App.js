@@ -1,11 +1,12 @@
-import './App.css';
-import Header from './Header';
-import LandingPage from './LandingPage';
+import FeaturesSection from "./components/FeaturesSection";
+import PricingSection from "./components/PricingSection";
+import './App.css'
 
 function App() {
   return (
     <div className="App">
-      <LandingPage />
+      <FeaturesSection />
+      <PricingSection />
     </div>
   );
 }

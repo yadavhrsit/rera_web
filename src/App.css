@@ -1,0 +1,6 @@
+.App{
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    overflow:visible;
+}

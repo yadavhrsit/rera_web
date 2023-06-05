@@ -1,8 +1,10 @@
 import React from 'react';
 import { Box, Grid, Typography } from '@mui/material';
-import CheckIcon from '@mui/icons-material/Check';
+import { styled } from '@mui/material/styles';
+import CheckIcon from '@mui/icons-material/CheckCircleSharp';
 import ClearIcon from '@mui/icons-material/Clear';
 import PricingCard from './PricingCard';
+
 
 const PricingSection = () => {
     const pricingData = [
@@ -54,12 +56,20 @@ const PricingSection = () => {
         // Repeat the object structure for other pricing plans
     ];
 
+    const StyledTypography = styled(Typography)(({ theme }) => ({
+        textAlign: 'center',
+        fontSize: '80px',
+        color: '#454545',
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '42px',
+        },
+    }));
     return (
-        <Box>
-            <Typography variant='h2' component={'p'} color={'#454545'} align='center'>
-                Choose Your Plan
-            </Typography>
-            <Grid container display="flex" justifyContent="center" alignItems="center" gap={'20px'} sx={{ backgroundColor: '#025464', padding: '50px 0px', marginTop: '20px' }}>
+        <Box sx={{ padding: '0px 20px 0px' }}>
+            <StyledTypography variant="h2" component="h2">
+                Select Your Plan
+            </StyledTypography>
+            <Grid container display="flex" justifyContent="center" alignItems="center" gap={'20px'} sx={{ marginTop: '20px' }}>
                 {pricingData.map((plan, index) => (
                     <PricingCard index={index} heading={plan.heading} subheading={plan.subheading} benefits={plan.benefits} pricing={plan.pricing} />
                 ))}

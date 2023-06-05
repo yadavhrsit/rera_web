@@ -5,7 +5,7 @@ import PricingButton from './PricingButton';
 function PricingCard(props) {
     return (
         <Grid item xs={12} sm={6} md={3} lg={2.5} key={props.index} sx={{ boxShadow: 3 }}>
-            <Card style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }} sx={{ backgroundColor: '#4287f5', color: 'white' }}>
+            <Card style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }} sx={{ backgroundColor: '#116D6E', color: 'white' }}>
                 <CardHeader title={props.heading} subheader={<Typography sx={{ color: 'white', }}>{props.subheading}</Typography>} />
                 <CardContent>
                     <Typography variant='h6' component="p">

@@ -7,12 +7,11 @@ function PricingCard(props) {
         <Grid item xs={12} sm={6} md={4} lg={3} key={props.index} sx={{ boxShadow: 3 }}>
             <Card
                 style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}
-                sx={{ backgroundColor: '#116D6E', color: 'white' }}
+                sx={{ backgroundColor: '#116D6E', color: 'white', textAlign: 'center' }}
             >
                 <CardHeader
                     title={props.heading}
-                    subheader={<Typography sx={{ color: 'white' }}>{props.subheading}</Typography>}
-                    sx={{ pb: 0 }}
+                    sx={{ marginTop: '20px' }}
                 />
                 <CardContent sx={{ pt: 0 }}>
                     <Typography variant="h6" component="p" sx={{ mb: 2 }}>
@@ -21,8 +20,13 @@ function PricingCard(props) {
                     <List>
                         {props.benefits.map((benefit, index) => (
                             <ListItem key={index} disableGutters sx={{ py: 1 }}>
-                                <ListItemIcon sx={{ color: 'white' }}>{benefit.icon}</ListItemIcon>
-                                <ListItemText primary={benefit.text} sx={{ color: 'white', ml: 1 }} />
+                                <ListItemIcon sx={{ ml: 5, color: 'white', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                                    {benefit.icon}
+                                </ListItemIcon>
+                                <ListItemText
+                                    primary={benefit.text}
+                                    sx={{ color: 'white', mr: 10, display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+                                />
                             </ListItem>
                         ))}
                     </List>

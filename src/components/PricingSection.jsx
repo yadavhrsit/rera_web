@@ -65,7 +65,7 @@ const PricingSection = () => {
         },
     }));
     return (
-        <Box sx={{ padding: '0px 20px 0px' }}>
+        <Box sx={{ padding: '50px 20px 10px', backgroundColor: '#dee2e6' }}>
             <StyledTypography variant="h2" component="h2">
                 Select Your Plan
             </StyledTypography>

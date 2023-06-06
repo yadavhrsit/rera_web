@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box, Grid } from '@mui/material';
+import { Grid } from '@mui/material';
+import { SectionContainer, CardsGrid } from './styledComponents/StyledComponents';
 import FeaturesCard from './FeaturesCard';
 import FormImage from '../assets/Forms-amico.svg';
 import CollabImage from '../assets/Good team-pana.svg';
@@ -32,15 +33,15 @@ const Features = () => {
     ]
 
     return (
-        <Box style={{ display: 'flex', flexDirection: 'column', gap: '30px', padding: '50px 20px 0px' }} >
-            <Grid container display="flex" justifyContent="center" alignItems="center" gap={'25px'}>
+        <SectionContainer style={{ display: 'flex', flexDirection: 'column', gap: '30px', padding: '50px 20px 0px' }} >
+            <CardsGrid container display="flex" justifyContent="center" alignItems="center" gap={'25px'}>
                 {features.map((feature, index) => (
                     <Grid item xs={12} sm={6} md={3} lg={2.8}>
                         <FeaturesCard index={index} img={feature.img} heading={feature.heading} data={feature.data} />
                     </Grid>
                 ))}
-            </Grid>
-        </Box >
+            </CardsGrid>
+        </SectionContainer>
     );
 };
 

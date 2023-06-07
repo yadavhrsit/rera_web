@@ -1,5 +1,5 @@
 import React from 'react'
-import { SectionContainer, SectionHeading, CardContentsWrapper } from './styledComponents/StyledComponents'
+import { SectionContainer, SectionHeading, CardContentsWrapper, CardsGrid } from './styledComponents/StyledComponents'
 import FaqItem from './FaqItem';
 
 function FaqSection() {
@@ -50,14 +50,12 @@ function FaqSection() {
 
     return (
         <SectionContainer greyBackground>
-            <SectionHeading>Frequently Asked Questions</SectionHeading>
-            <CardContentsWrapper>
-                {
-                    Questions.map(({ question, answer }, index) => (
-                        <FaqItem index={index} question={question} answer={answer} />
-                    ))
-                }
-            </CardContentsWrapper>
+            <SectionHeading sx={{ mb: 3 }}>Frequently Asked Questions</SectionHeading>
+            {
+                Questions.map(({ question, answer }, index) => (
+                    <FaqItem index={index} question={question} answer={answer} />
+                ))
+            }
         </SectionContainer>
     )
 }

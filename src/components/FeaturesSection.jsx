@@ -33,8 +33,8 @@ const Features = () => {
     ]
 
     return (
-        <SectionContainer style={{ display: 'flex', flexDirection: 'column', gap: '30px', padding: '50px 20px 0px' }} >
-            <CardsGrid container display="flex" justifyContent="center" alignItems="center" gap={'25px'}>
+        <SectionContainer  >
+            <CardsGrid container>
                 {features.map((feature, index) => (
                     <Grid item xs={12} sm={6} md={3} lg={2.8}>
                         <FeaturesCard index={index} img={feature.img} heading={feature.heading} data={feature.data} />

@@ -15,8 +15,8 @@ const FaqItem = (props) => {
     };
 
     return (
-        <div key={props.index}>
-            <Accordion expanded={expanded} sx={{ backgroundColor: '#fffff', minHeight: '80px' }} >
+        <div key={props.index} style={{ marginTop: '5px' }}>
+            <Accordion expanded={expanded} sx={{ backgroundColor: '#fffff', minHeight: '80px', maxWidth: '99%' }}>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     sx={{
@@ -24,7 +24,7 @@ const FaqItem = (props) => {
                         alignItems: 'center',
                         justifyContent: 'space-between',
                         color: '#454545',
-                        backgroundColor: '#fffff'
+                        backgroundColor: '#fffff',
                     }}
                     onClick={handleExpand}
                 >
@@ -38,7 +38,7 @@ const FaqItem = (props) => {
                     </Typography>
 
                 </AccordionSummary>
-                <AccordionDetails>
+                <AccordionDetails >
                     <Typography variant="p" align="left" fontSize={{ xs: '16px', sm: '20px' }} fontWeight={500} color={'#454545'}>
                         {props.answer}
                     </Typography>

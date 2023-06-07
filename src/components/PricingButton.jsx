@@ -8,6 +8,8 @@ function PricingButton(props) {
             color: 'black',
             height: '50px',
             fontSize: '22px',
+            borderTopLeftRadius: '0px',
+            borderTopRightRadius: '0px',
             '&:hover': {
                 backgroundColor: '#B2B2B2'
             }

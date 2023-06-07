@@ -15,8 +15,8 @@ const FaqItem = (props) => {
     };
 
     return (
-        <div key={props.index} style={{ marginTop: '5px' }}>
-            <Accordion expanded={expanded} sx={{ backgroundColor: '#fffff', minHeight: '80px', maxWidth: '99%' }}>
+        <div key={props.index} style={{ marginTop: '8px' }}>
+            <Accordion expanded={expanded} sx={{ backgroundColor: '#fffff', boxShadow: 3 }}>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     sx={{
@@ -32,7 +32,7 @@ const FaqItem = (props) => {
                         align="left" color={'#454545'}
                         fontSize={{ xs: '20px', sm: '26px' }}
                         fontWeight={'bold'}
-                        lineHeight={3}
+                        lineHeight={2.5}
                     >
                         {props.question}
                     </Typography>
@@ -44,7 +44,7 @@ const FaqItem = (props) => {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-        </div>
+        </div >
     );
 };
 

@@ -58,9 +58,7 @@ const PricingSection = () => {
 
     return (
         <SectionContainer>
-            <SectionHeading variant="h2" component="h2">
-                Select Your Plan
-            </SectionHeading>
+            <SectionHeading sx={{ mb: 3 }}>Select Your Plan</SectionHeading>
             <CardsGrid container display="flex" justifyContent="center" alignItems="center" gap={'25px'} sx={{ marginTop: '20px' }}>
                 {
                     pricingData.map(({ heading, subheading, benefits, pricing }, index) => (

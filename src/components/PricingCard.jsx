@@ -18,7 +18,7 @@ function PricingCard(props) {
                         props.benefits.map((benefit, index) => (
                             <ListItem key={index} disableGutters >
                                 <ListItemIcon sx={{ color: 'white' }}> {benefit.icon} </ListItemIcon>
-                                <Typography variant='p'>{benefit.text}</Typography>
+                                <Typography variant='p' fontSize={'18px'}>{benefit.text}</Typography>
                             </ListItem>
                         ))
                     }

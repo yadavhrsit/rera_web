@@ -5,7 +5,6 @@ export const SectionContainer = styled(Box)(({ greyBackground }) => ({
     minHeight: '95vh',
     display: 'flex',
     flexDirection: 'column',
-    gap: '30px',
     padding: '40px 20px 10px',
     backgroundColor: greyBackground ? '#dee2e6' : 'white'
 }));
@@ -36,6 +35,7 @@ export const ItemCard = styled(Card)({
 
 export const CardContentsWrapper = styled(CardContent)({
     padding: '30px 15px 0px 15px',
+    gap: '3px',
     display: 'flex',
     flexDirection: 'column',
 })

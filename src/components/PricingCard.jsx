@@ -2,7 +2,7 @@ import React from 'react';
 import { ListItem, ListItemIcon, Typography } from '@mui/material';
 import PricingButton from './PricingButton';
 import { ItemCard, CardContentsWrapper } from './styledComponents/StyledComponents';
-import { CardHeading, CardSubHeading, CardBody } from './CardContents';
+import { CardHeading, CardSubHeading } from './CardContents';
 
 function PricingCard(props) {
     return (

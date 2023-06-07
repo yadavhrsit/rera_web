@@ -57,7 +57,7 @@ const PricingSection = () => {
     ];
 
     return (
-        <SectionContainer sx={{ backgroundColor: '#dee2e6' }}>
+        <SectionContainer>
             <SectionHeading variant="h2" component="h2">
                 Select Your Plan
             </SectionHeading>

@@ -28,13 +28,18 @@ const FaqItem = (props) => {
                     }}
                     onClick={handleExpand}
                 >
-                    <Typography variant="body2" align="left" color={'#454545'} fontSize={'26px'} fontWeight={'bold'} lineHeight={3}>
+                    <Typography variant="body2"
+                        align="left" color={'#454545'}
+                        fontSize={{ xs: '20px', sm: '26px' }}
+                        fontWeight={'bold'}
+                        lineHeight={3}
+                    >
                         {props.question}
                     </Typography>
 
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography variant="p" align="left" fontSize={'20px'} fontWeight={500} color={'#454545'}>
+                    <Typography variant="p" align="left" fontSize={{ xs: '16px', sm: '20px' }} fontWeight={500} color={'#454545'}>
                         {props.answer}
                     </Typography>
                 </AccordionDetails>

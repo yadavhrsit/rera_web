@@ -2,9 +2,6 @@ import React from 'react';
 import { Container, Grid, Typography } from '@mui/material';
 import { SectionContainer } from './styledComponents/StyledComponents';
 
-const footerStyles = {
-    textAlign: 'center',
-};
 
 const columnStyles = {
     marginBottom: '2rem',
@@ -15,9 +12,9 @@ const columnStyles = {
 const Footer = () => {
     return (
         <SectionContainer greyBackground>
-            <footer style={footerStyles}>
+            <footer>
                 <Container maxWidth="lg">
-                    <Grid container spacing={4}>
+                    <Grid container>
                         <Grid item xs={12} sm={6} md={2} style={columnStyles}>
                             <Typography variant="subtitle1" sx={{ fontWeight: 'bold' }}>
                                 Heading 1
@@ -73,7 +70,7 @@ const Footer = () => {
                             <Typography variant="p" display="block">Item 4 </Typography>
                         </Grid>
                     </Grid>
-                    <Typography variant="p" display="block">&copy; Copyright 2023 Rera</Typography>
+                    <Typography variant="h6" display="block" textAlign={'center'}>&copy; Copyright 2023 Rera</Typography>
                 </Container>
             </footer>
         </SectionContainer>

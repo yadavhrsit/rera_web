@@ -26,7 +26,7 @@ const Features = () => {
             img: CollabImage
         },
         {
-            heading: "Stay Updated to latest RERA Requirement",
+            heading: "Updated to latest RERA Requirements",
             data: "Text for Feature 1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam facere optio odit illum nihil repudiandae tenetur aliquam maxime ipsum omnis.",
             img: Update
         }

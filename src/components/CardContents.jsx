@@ -3,7 +3,7 @@ import { Typography } from '@mui/material'
 
 export function CardHeading(props) {
     return (
-        <Typography variant="h4" sx={{ fontWeight: '600', marginTop: '10px' }}>
+        <Typography variant="h4" sx={{ fontWeight: '600', fontSize: '2rem', marginTop: '10px' }}>
             {props.heading}
         </Typography>
     )

@@ -2,10 +2,10 @@ import { styled } from '@mui/material/styles';
 import { Box, Card, CardContent, Grid, Typography } from "@mui/material";
 
 export const SectionContainer = styled(Box)(({ greyBackground }) => ({
-    minHeight: '95vh',
+
     display: 'flex',
     flexDirection: 'column',
-    padding: '40px 20px 10px',
+    padding: '40px 20px 100px',
     backgroundColor: greyBackground ? '#dee2e6' : 'white'
 }));
 

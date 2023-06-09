@@ -5,7 +5,7 @@ import { CardHeading, CardBody } from './CardContents';
 
 function FeaturesCard(props) {
     return (
-        <ItemCard key={props.index} style={{ color: '#212529', backgroundColor: '#dee2e6', height: '80vh' }}>
+        <ItemCard key={props.index} style={{ color: '#212529', backgroundColor: '#dee2e6', height: 'min-content' }}>
             <CardContentsWrapper>
                 <CardHeading heading={props.heading} />
                 <CardBody data={props.data} />

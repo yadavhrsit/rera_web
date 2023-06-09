@@ -18,7 +18,7 @@ const FaqItem = (props) => {
         <div key={props.index} style={{ marginTop: '8px' }}>
             <Accordion expanded={expanded} sx={{ backgroundColor: '#fffff', boxShadow: 3 }}>
                 <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
+                    expandIcon={<ExpandMoreIcon sx={{ fontSize: 40 }} />}
                     sx={{
                         display: 'flex',
                         alignItems: 'center',

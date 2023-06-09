@@ -3,6 +3,7 @@ import { Rating } from '@mui/material';
 import { styled } from '@mui/system';
 import StarIcon from '@mui/icons-material/Star';
 import { SectionContainer, SectionHeading } from './styledComponents/StyledComponents';
+import { CardHeading, CardSubHeading } from './CardContents';
 
 // Custom styled component for the golden hover effect
 const GoldenRating = styled(Rating)(({ theme }) => ({
@@ -32,8 +33,9 @@ const RatingComponent = () => {
     };
 
     return (
-        <SectionContainer sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '20px' }}>
+        <SectionContainer sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '20px', color: '#212529' }}>
             <SectionHeading>Rate Our Service</SectionHeading>
+            <CardSubHeading subheading={"Click on a star to rate it!"} />
             <GoldenRating
                 name="customized-color"
                 value={rating}

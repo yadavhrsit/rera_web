@@ -11,7 +11,7 @@ export function CardHeading(props) {
 
 export function CardSubHeading(props) {
     return (
-        <Typography variant='p' fontSize={'30px'} marginTop={'10px'} marginBottom={'10px'}>
+        <Typography variant='body2' fontSize={'30px'} marginTop={'10px'} marginBottom={'10px'}>
             {props.subheading}
         </Typography>
     )

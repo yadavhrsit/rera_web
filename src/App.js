@@ -5,11 +5,13 @@ import PricingSection from "./components/PricingSection";
 import FaqSection from "./components/FaqSection";
 import RatingSection from "./components/RatingSection";
 import Footer from './components/Footer';
+import AppBar from './components/AppBar';
 
 
 function App() {
   return (
     <div className="App">
+      {/* <AppBar /> */}
       <AboutSection />
       <FeaturesSection />
       <PricingSection />

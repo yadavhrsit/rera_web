@@ -36,7 +36,7 @@ const Features = () => {
         <SectionContainer id='features' >
             <CardsGrid container>
                 {features.map((feature, index) => (
-                    <Grid item xs={12} sm={6} md={3} lg={2.8}>
+                    <Grid key={index} item xs={12} sm={6} md={3} lg={2.8}>
                         <FeaturesCard index={index} img={feature.img} heading={feature.heading} data={feature.data} />
                     </Grid>
                 ))}

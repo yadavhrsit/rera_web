@@ -2,28 +2,36 @@ import React from 'react';
 import { AppBar, Toolbar, Typography, IconButton, Menu, MenuItem, Box } from '@mui/material';
 import { Link } from "react-scroll";
 import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
+
+
 
 const appBarStyle = {
     backgroundColor: '#434242',
     position: 'fixed',
+    fontSize: '20px',
+    textTransform: 'uppercase',
 };
 
 const linkStyle = {
-    padding: '10px 20px',
+    padding: '6px 20px',
     color: 'white',
+    fontWeight: '500',
     textDecoration: 'none',
     cursor: 'pointer',
     lineHeight: '1.5'
 };
 
 const activeLinkStyle = {
-    padding: '10px 20px',
+    padding: '6px 20px',
     color: 'black',
+    fontWeight: '500',
     textDecoration: 'none',
     cursor: 'pointer',
     backgroundColor: 'white',
-    borderRadius: '5px'
+    borderRadius: '5px',
 };
+
 const activeLinkStyleMob = {
     color: 'white',
     textDecoration: 'none',
@@ -54,42 +62,61 @@ const AppBarComponent = () => {
         setActiveLink(link);
     };
 
+
+
     return (
         <AppBar style={appBarStyle}>
-            <Toolbar sx={{
-                marginLeft: '30px', marginRight: '30px', '@media (max-width: 600px)': {
-                    marginRight: '0px',
-                    marginLeft: '5px',
-                },
-            }}>
-                <Typography variant="h6" component="div" >
+            <Toolbar
+                sx={{
+                    marginLeft: '30px',
+                    marginRight: '30px',
+                    '@media (max-width: 600px)': {
+                        marginRight: '0px',
+                        marginLeft: '5px',
+                    },
+                }}
+            >
+                <Typography variant="h6" component="div">
                     RERA Logo
                 </Typography>
                 <Box sx={{ flexGrow: 1 }} />
                 <Box sx={{ display: { xs: 'block', sm: 'none' } }}>
-                    <IconButton
-                        size="large"
-                        edge="start"
-                        color="inherit"
-                        aria-label="menu"
-                        aria-controls="menu-appbar"
-                        aria-haspopup="true"
-                        onClick={handleMenuOpen}
-
-                    >
-                        <MenuIcon />
-                    </IconButton>
+                    {isMenuOpen ? (
+                        <IconButton
+                            size="large"
+                            edge="start"
+                            color="inherit"
+                            aria-label="close"
+                            aria-controls="menu-appbar"
+                            aria-haspopup="true"
+                            onClick={handleMenuClose}
+                        >
+                            <CloseIcon />
+                        </IconButton>
+                    ) : (
+                        <IconButton
+                            size="large"
+                            edge="start"
+                            color="inherit"
+                            aria-label="menu"
+                            aria-controls="menu-appbar"
+                            aria-haspopup="true"
+                            onClick={handleMenuOpen}
+                        >
+                            <MenuIcon />
+                        </IconButton>
+                    )}
                     <Menu
                         id="menu-appbar"
                         anchorEl={anchorEl}
                         anchorOrigin={{
-                            vertical: 'top',
+                            vertical: 'bottom',
                             horizontal: 'right',
                         }}
                         keepMounted
                         transformOrigin={{
                             vertical: 'top',
-                            horizontal: 'right',
+                            horizontal: 'left',
                         }}
                         open={isMenuOpen}
                         onClose={handleMenuClose}
@@ -146,22 +173,9 @@ const AppBarComponent = () => {
                                 FAQs
                             </Link>
                         </MenuItem>
-                        <MenuItem onClick={handleMenuClose} style={activeLink === "rateus" ? activeLinkStyleMob : linkStylesMob}>
-                            <Link
-                                to="rateus"
-                                activeClass="active"
-                                spy={true}
-                                smooth={true}
-                                offset={-100}
-                                duration={500}
-                                onSetActive={() => handleSetActiveLink("rateus")}
-                            >
-                                Rate Us
-                            </Link>
-                        </MenuItem>
                     </Menu>
                 </Box>
-                <Box sx={{ display: { xs: 'none', sm: 'flex', } }}>
+                <Box sx={{ display: { xs: 'none', sm: 'flex' } }}>
                     <Link
                         to="about"
                         style={activeLink === "about" ? activeLinkStyle : linkStyle}
@@ -210,18 +224,7 @@ const AppBarComponent = () => {
                     >
                         FAQs
                     </Link>
-                    <Link
-                        to="rateus"
-                        style={activeLink === "rateus" ? activeLinkStyle : linkStyle}
-                        activeClass="active"
-                        spy={true}
-                        smooth={true}
-                        offset={0}
-                        duration={500}
-                        onSetActive={() => handleSetActiveLink("rateus")}
-                    >
-                        Rate Us
-                    </Link>
+
                 </Box>
             </Toolbar>
         </AppBar>
@@ -229,4 +232,3 @@ const AppBarComponent = () => {
 };
 
 export default AppBarComponent;
-

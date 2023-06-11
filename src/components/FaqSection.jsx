@@ -1,10 +1,10 @@
 import React from 'react'
-import { SectionContainer, SectionHeading, CardContentsWrapper, CardsGrid } from './styledComponents/StyledComponents'
+import { SectionContainer, SectionHeading, } from './styledComponents/StyledComponents'
 import FaqItem from './FaqItem';
-import { useTheme } from '@emotion/react';
+
 
 function FaqSection() {
-    const theme = useTheme();
+
     const Questions = [
         {
             question: 'Question 1',
@@ -50,9 +50,10 @@ function FaqSection() {
 
 
     return (
-        <SectionContainer greyBackground id='faqs' sx={{
+        <SectionContainer id='faqs' sx={{
             paddingLeft: 26,
             paddingRight: 26,
+            backgroundColor: '#dee2e6',
             '@media (max-width: 960px)': {
                 paddingLeft: 2.5,
                 paddingRight: 2.5,
@@ -61,9 +62,9 @@ function FaqSection() {
             <SectionHeading sx={{ mb: 3 }}>Frequently Asked Questions</SectionHeading>
             {
                 Questions.map(({ question, answer }, index) => (
-                    <FaqItem index={index} question={question} answer={answer} />
-                ))
-            }
+                    <FaqItem key={index} index={index} question={question} answer={answer} />
+                ))}
+
         </SectionContainer>
     )
 }

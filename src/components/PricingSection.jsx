@@ -62,7 +62,7 @@ const PricingSection = () => {
             <CardsGrid container display="flex" justifyContent="center" alignItems="center" gap={'25px'} sx={{ marginTop: '20px' }}>
                 {
                     pricingData.map(({ heading, subheading, benefits, pricing }, index) => (
-                        <Grid item xs={12} sm={6} md={4} lg={3} sx={{ boxShadow: 10 }}>
+                        <Grid key={index} item xs={12} sm={6} md={4} lg={3} sx={{ boxShadow: 10 }}>
                             <PricingCard
                                 index={index}
                                 heading={heading}

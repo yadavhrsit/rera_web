@@ -57,7 +57,7 @@ const PricingSection = () => {
     ];
 
     return (
-        <SectionContainer>
+        <SectionContainer id='pricing'>
             <SectionHeading sx={{ mb: 3 }}>Select Your Plan</SectionHeading>
             <CardsGrid container display="flex" justifyContent="center" alignItems="center" gap={'25px'} sx={{ marginTop: '20px' }}>
                 {

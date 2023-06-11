@@ -11,7 +11,7 @@ const columnStyles = {
 
 const Footer = () => {
     return (
-        <SectionContainer greyBackground style={{ paddingBottom: '10px' }}>
+        <SectionContainer greyBackground id='footer' style={{ paddingBottom: '10px' }}>
             <footer>
                 <Container maxWidth="lg">
                     <Grid container>

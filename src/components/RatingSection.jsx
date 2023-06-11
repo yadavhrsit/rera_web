@@ -33,7 +33,7 @@ const RatingComponent = () => {
     };
 
     return (
-        <SectionContainer sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '20px', color: '#212529' }}>
+        <SectionContainer id='rateus' sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '20px', color: '#212529' }}>
             <SectionHeading>Rate Our Service</SectionHeading>
             <CardSubHeading subheading={"Click on a star to rate it!"} />
             <GoldenRating

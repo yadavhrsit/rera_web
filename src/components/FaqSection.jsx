@@ -50,7 +50,7 @@ function FaqSection() {
 
 
     return (
-        <SectionContainer greyBackground sx={{
+        <SectionContainer greyBackground id='faqs' sx={{
             paddingLeft: 26,
             paddingRight: 26,
             '@media (max-width: 960px)': {

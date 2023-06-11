@@ -11,7 +11,7 @@ import AppBar from './components/AppBar';
 function App() {
   return (
     <div className="App">
-      {/* <AppBar /> */}
+      <AppBar />
       <AboutSection />
       <FeaturesSection />
       <PricingSection />

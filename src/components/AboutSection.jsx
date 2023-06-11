@@ -6,7 +6,7 @@ import sideImage from '../assets/Working late-amico.svg';
 
 function AboutSection() {
     return (
-        <SectionContainer sx={{ paddingBottom: '20px' }}>
+        <SectionContainer id='about' sx={{ paddingBottom: '20px', marginTop: '40px' }}>
             <Grid container spacing={4} sx={{ display: 'flex', justifyContent: 'center' }}>
                 <Grid item xs={12} md={5.6} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-around' }}>
                     <CardHeading heading={"Lorem ipsum dolor sit amet, consectetur adipiscing elit.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad "} />

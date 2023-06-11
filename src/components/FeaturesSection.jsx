@@ -33,7 +33,7 @@ const Features = () => {
     ]
 
     return (
-        <SectionContainer  >
+        <SectionContainer id='features' >
             <CardsGrid container>
                 {features.map((feature, index) => (
                     <Grid item xs={12} sm={6} md={3} lg={2.8}>

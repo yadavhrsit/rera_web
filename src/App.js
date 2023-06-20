@@ -19,8 +19,8 @@ function App() {
       <PricingSection />
       <FaqSection />
       <RatingSection />
-      <RegisterSection />
-      <LoginSection />
+      {/* <RegisterSection />
+      <LoginSection /> */}
       <Footer />
     </div>
   );

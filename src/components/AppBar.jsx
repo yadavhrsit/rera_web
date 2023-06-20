@@ -1,8 +1,9 @@
-import React from 'react';
-import { AppBar, Toolbar, Typography, IconButton, Menu, MenuItem, Box } from '@mui/material';
+import React, { useState } from 'react';
+import { AppBar, Toolbar, Typography, IconButton, Menu, MenuItem, Box, Button } from '@mui/material';
 import { Link } from "react-scroll";
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import LoginSection from './LoginSection';
 
 
 
@@ -62,6 +63,11 @@ const AppBarComponent = () => {
         setActiveLink(link);
     };
 
+    const [loginClick, setloginClick] = useState(false);
+
+    const loginClickHandler = () => {
+        setloginClick(!loginClick);
+    }
 
 
     return (
@@ -173,6 +179,9 @@ const AppBarComponent = () => {
                                 FAQs
                             </Link>
                         </MenuItem>
+                        <MenuItem onClick={handleMenuClose} style={linkStylesMob}>
+                            Login
+                        </MenuItem>
                     </Menu>
                 </Box>
                 <Box sx={{ display: { xs: 'none', sm: 'flex' } }}>
@@ -224,6 +233,14 @@ const AppBarComponent = () => {
                     >
                         FAQs
                     </Link>
+                    <Button sx={{ color: 'white', fontWeight: '500', fontSize: '18px', lineHeight: '1.8', padding: '1px 14px', backgroundColor: '#2979ff' }}
+                        onClick={loginClickHandler}
+                    >
+                        Login
+                    </Button>
+                    {
+                        loginClick ? (<LoginSection />) : ("")
+                    }
 
                 </Box>
             </Toolbar>

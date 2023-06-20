@@ -9,6 +9,7 @@ function LoginSection() {
     const [otp, setOtp] = useState('');
     const [isOTPVerified, setIsOTPVerified] = useState(false);
 
+
     const handleEmailLogin = (e) => {
         e.preventDefault();
         // Handle email login logic here
@@ -19,17 +20,23 @@ function LoginSection() {
         // Handle mobile login logic here
     };
 
-    const isFormValid = () => {
+    const isFormValid1 = () => {
         const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+        return (
+            (isValidEmail && password !== '')
+        );
+    };
+    const isFormValid2 = () => {
         const isValidMobileNumber = /^\d{10}$/.test(mobileNumber);
 
         return (
-            (isValidEmail && password !== '') || (isValidMobileNumber && otp !== '' && isOTPVerified)
+            (isValidMobileNumber && otp !== '' && isOTPVerified)
         );
     };
 
     return (
-        <Card style={{ margin: 'auto', marginTop: 50, padding: 20 }}>
+        <Card style={{ margin: 'auto', marginTop: 50, padding: 20, position: 'absolute', top: 30, right: 10, backgroundColor: 'whitesmoke', border: '2px solid grey' }}>
             <CardContent>
                 <div style={{ display: 'flex', alignItems: 'center' }}>
                     <img src={Logo} alt="Logo" style={{ width: 50, height: 50, marginRight: 10 }} />
@@ -58,7 +65,7 @@ function LoginSection() {
                         variant="contained"
                         color="primary"
                         onClick={handleEmailLogin}
-                        disabled={!isFormValid()}
+                        disabled={!isFormValid1()}
                     >
                         Log In with Email
                     </Button>
@@ -88,7 +95,7 @@ function LoginSection() {
                         variant="contained"
                         color="primary"
                         onClick={handleMobileLogin}
-                        disabled={!isFormValid()}
+                        disabled={!isFormValid2()}
                     >
                         Log In with Mobile
                     </Button>

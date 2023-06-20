@@ -6,6 +6,8 @@ import FaqSection from "./components/FaqSection";
 import RatingSection from "./components/RatingSection";
 import Footer from './components/Footer';
 import AppBar from './components/AppBar';
+import RegisterSection from './components/RegisterSection';
+import LoginSection from './components/LoginSection';
 
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
       <PricingSection />
       <FaqSection />
       <RatingSection />
+      <RegisterSection />
+      <LoginSection />
       <Footer />
     </div>
   );

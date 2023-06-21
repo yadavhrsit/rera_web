@@ -179,10 +179,13 @@ const AppBarComponent = () => {
                                 FAQs
                             </Link>
                         </MenuItem>
-                        <MenuItem onClick={handleMenuClose} style={linkStylesMob}>
+                        <MenuItem onClick={loginClickHandler} style={linkStylesMob}>
                             Login
                         </MenuItem>
                     </Menu>
+                    {
+                        loginClick ? (<LoginSection />) : ("")
+                    }
                 </Box>
                 <Box sx={{ display: { xs: 'none', sm: 'flex' } }}>
                     <Link

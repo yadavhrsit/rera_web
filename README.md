@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# RERA Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the README for the **RERA Website**. This website is built using React.js and Material-UI (MUI) to provide an informative showcase of the features of our Real Estate Regulatory Authority (RERA) system. In addition to showcasing features, explaining our pricing structure, and offering user ratings, we've included a Frequently Asked Questions (FAQ) section to address common inquiries. Below, you'll find an overview of the sections and information included on this website.
 
-## Available Scripts
+## Features Showcase
 
-In the project directory, you can run:
+The website serves as a visual representation of the features and capabilities of our RERA application. It provides an interactive way for visitors to explore and understand what our application can offer. Each feature is accompanied by relevant descriptions and visuals to highlight its functionality and benefits.
 
-### `npm start`
+## Pricing Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+We understand the importance of transparency, which is why our pricing structure is clearly outlined on the website. Visitors can easily view the different pricing tiers available and the features included in each tier. This ensures that potential customers have a clear understanding of what they'll receive based on the plan they choose.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## User Ratings and Reviews
 
-### `npm test`
+We value our customers' feedback and strive to showcase the positive experiences they've had with our RERA application. The website includes a section for user ratings and reviews, allowing visitors to see what others have to say about their experiences. This helps build trust and credibility among potential customers.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To run the RERA Website project locally, follow these steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
+git clone https://github.com/yadavhrsit/rera_web.git
+cd rera_web
+npm install
+npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you're interested in exploring our application's features, learning more about our pricing, reading user ratings, checking our FAQ, and finding ways to get in touch, simply visit [RERA Website]((https://rera-web.vercel.app/)).

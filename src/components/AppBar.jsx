@@ -179,13 +179,13 @@ const AppBarComponent = () => {
                                 FAQs
                             </Link>
                         </MenuItem>
-                        <MenuItem onClick={loginClickHandler} style={linkStylesMob}>
+{/*                         <MenuItem onClick={loginClickHandler} style={linkStylesMob}>
                             Login
-                        </MenuItem>
+                        </MenuItem> */}
                     </Menu>
-                    {
+{/*                     {
                         loginClick ? (<LoginSection />) : ("")
-                    }
+                    } */}
                 </Box>
                 <Box sx={{ display: { xs: 'none', sm: 'flex' } }}>
                     <Link
@@ -236,14 +236,14 @@ const AppBarComponent = () => {
                     >
                         FAQs
                     </Link>
-                    <Button sx={{ color: 'white', fontWeight: '500', fontSize: '18px', lineHeight: '1.8', padding: '1px 14px', backgroundColor: '#2979ff' }}
+{/*                     <Button sx={{ color: 'white', fontWeight: '500', fontSize: '18px', lineHeight: '1.8', padding: '1px 14px', backgroundColor: '#2979ff' }}
                         onClick={loginClickHandler}
                     >
                         Login
                     </Button>
                     {
                         loginClick ? (<LoginSection />) : ("")
-                    }
+                    } */}
 
                 </Box>
             </Toolbar>

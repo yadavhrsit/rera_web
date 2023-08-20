@@ -1,6 +1,7 @@
 # RERA Website
 
 Welcome to the README for the **RERA Website**. This website is built using React.js and Material-UI (MUI) to provide an informative showcase of the features of our Real Estate Regulatory Authority (RERA) system. In addition to showcasing features, explaining our pricing structure, and offering user ratings, we've included a Frequently Asked Questions (FAQ) section to address common inquiries. Below, you'll find an overview of the sections and information included on this website.
+https://rera-web.vercel.app
 
 ## Features Showcase
 
@@ -25,5 +26,3 @@ cd rera_web
 npm install
 npm start
 
-
-If you're interested in exploring our application's features, learning more about our pricing, reading user ratings, checking our FAQ, and finding ways to get in touch, simply visit [RERA Website]((https://rera-web.vercel.app/)).
